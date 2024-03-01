@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(196, 194, 194);
+}
+.right {
+    display: flex;
+    justify-content: flex-end;
+ }
+ 
+ .right button {
+     margin-left: 10px;
+ }
+
+.carousel {
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    height: 500px;
+    border:2px solid black;
+    justify-content: center;
+    background-color: white;
+}
+
+.carousel-slide {
+    width: 33.33%; /* Width of each slide */
+    transition: transform 0.5s ease;
+}
+
+.product-box {
+    display: flex;
+}
+
+.product {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 0 10px;
+    width: 50%;
+    height: 200px;
+    background-color: white;
+}
+
+/* Navigation Buttons */
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.link-container {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.link-container a {
+    display: block;
+}
